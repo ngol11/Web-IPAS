@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Human Body Explorer</title>
+  <link rel="stylesheet" href="ipas.css" />
+  <script src="ipas.js" defer></script>
+</head>
+<body>
+
+  
+  <header>
+    <div class="container">
+      <h1>SISTEM SARAF DAN GERAK</h1>
+      <p>Jelajahi hubungan sistem saraf & sistem gerak dengan cara yang seru</p>
+      <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#konsep">Konsep</a>
+        <a href="#alur">Alur Gerak</a>
+        <a href="#ssp">Sistem Saraf Pusat</a>
+        <a href="#kuis">Kuis</a>
+        <a href="#refleksi">Refleksi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+  
+    <section id="beranda">
+      <h2>Halo, Penjelajah Tubuh!</h2>
+      <p>Pernah nggak sih kamu langsung tarik tangan waktu tidak sengaja menyentuh panci panas? Atau kamu sengaja mengambil buku di meja? Dua kejadian itu terlihat mirip, tapi di dalam tubuhmu terjadi proses yang sangat berbeda.</p>
+      <p>Website ini akan membantu kamu memahami <strong>bagaimana sistem saraf dan sistem gerak bekerja sama</strong> supaya tubuh bisa bergerak. Yuk mulai belajar!</p>
+
+    
+      <div class="ilustrasi-tubuh">
+        <svg viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg" class="svg-tubuh">
+         
+          <circle cx="150" cy="55" r="40" fill="#f4a261" stroke="#e63946" stroke-width="3" class="bagian otak"/>
+          <text x="150" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d3557">Otak</text>
+          
+        
+          <rect x="140" y="95" width="20" height="25" fill="#f4a261" stroke="#e63946" stroke-width="2"/>
+          
+          
+          <rect x="115" y="120" width="70" height="110" rx="12" fill="#457b9d" stroke="#1d3557" stroke-width="2" class="bagian sumsum"/>
+          <text x="150" y="175" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Sumsum</text>
+          <text x="150" y="190" text-anchor="middle" font-size="11" fill="white">Tulang Belakang</text>
+          
+         
+          <rect x="40" y="130" width="70" height="18" rx="9" fill="#e9c46a" stroke="#e63946" stroke-width="2" class="bagian otot"/>
+          <text x="75" y="143" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d3557">Otot</text>
+          
+          
+          <rect x="190" y="130" width="70" height="18" rx="9" fill="#e9c46a" stroke="#e63946" stroke-width="2" class="bagian otot"/>
+          <text x="225" y="143" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d3557">Otot</text>
+          
+      
+          <rect x="125" y="235" width="20" height="100" rx="10" fill="#f4a261" stroke="#1d3557" stroke-width="2" class="bagian tulang"/>
+          
+          
+          <rect x="155" y="235" width="20" height="100" rx="10" fill="#f4a261" stroke="#1d3557" stroke-width="2" class="bagian tulang"/>
+          
+          
+          <text x="150" y="360" text-anchor="middle" font-size="13" font-weight="bold" fill="#e63946">Tulang & Sendi</text>
+          <text x="150" y="380" text-anchor="middle" font-size="12" fill="#457b9d">Saraf tepi menghubungkan semuanya</text>
+          
+          
+          <path d="M150 95 Q150 110 150 120" stroke="#e63946" stroke-width="2" fill="none" stroke-dasharray="4 3" class="saraf-animasi"/>
+          <path d="M115 150 Q80 150 75 140" stroke="#e63946" stroke-width="2" fill="none" stroke-dasharray="4 3" class="saraf-animasi"/>
+          <path d="M185 150 Q220 150 225 140" stroke="#e63946" stroke-width="2" fill="none" stroke-dasharray="4 3" class="saraf-animasi"/>
+        </svg>
+        <p class="keterangan-gambar">Ilustrasi tubuh: Otak, Sumsum, Otot, Tulang, dan Saraf saling terhubung</p>
+      </div>
+
+      <div class="kartu-grid">
+        <div class="kartu">
+          <h3>1. Analisis Konsep</h3>
+          <p>Pelajari fungsi otak, sumsum tulang belakang, saraf, tulang, sendi, dan otot.</p>
+        </div>
+        <div class="kartu">
+          <h3>2. Alur Gerak</h3>
+          <p>Pahami perbedaan jalur gerak refleks dan gerak sadar.</p>
+        </div>
+        <div class="kartu">
+          <h3>3. Sistem Saraf Pusat</h3>
+          <p>Kenali peran otak dan sumsum tulang belakang secara lebih dalam.</p>
+        </div>
+        <div class="kartu">
+          <h3>4. Kuis Interaktif</h3>
+          <p>Uji pemahamanmu dengan soal-soal menarik.</p>
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="konsep">
+      <h2>1. Analisis Konsep</h2>
+      <p>Berikut fungsi utama dan contoh nyata di kehidupan sehari-hari dari bagian-bagian penting tubuh kita:</p>
+
+      <div class="tabel-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Bagian Tubuh</th>
+              <th>Fungsi Utama</th>
+              <th>Contoh Kehidupan Sehari-hari</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Otak</strong></td>
+              <td>Pusat kendali utama. Berpikir, mengingat, memutuskan, dan mengontrol gerakan sadar.</td>
+              <td>Kamu memutuskan mau ambil pensil, lalu otak mengirim perintah ke tangan.</td>
+            </tr>
+            <tr>
+              <td><strong>Sumsum tulang belakang</strong></td>
+              <td>Jalur cepat saraf. Menghubungkan otak dengan tubuh dan mengatur gerakan refleks.</td>
+              <td>Waktu lutut dipukul dokter, kaki langsung menendang tanpa dipikir dulu.</td>
+            </tr>
+            <tr>
+              <td><strong>Saraf tepi</strong></td>
+              <td>Mengirim pesan bolak-balik antara otak/sumsum dengan otot, kulit, dan organ.</td>
+              <td>Kamu merasakan panas di ujung jari karena saraf sensorik mengirim sinyal ke pusat.</td>
+            </tr>
+            <tr>
+              <td><strong>Tulang</strong></td>
+              <td>Kerangka tubuh. Memberi bentuk, menopang, dan melindungi organ dalam.</td>
+              <td>Tulang lengan yang menopang saat kamu mengangkat tas sekolah.</td>
+            </tr>
+            <tr>
+              <td><strong>Sendi</strong></td>
+              <td>Tempat pertemuan dua tulang. Memungkinkan tubuh bisa menekuk dan bergerak.</td>
+              <td>Sendi siku yang menekuk saat kamu mengangkat gelas ke mulut.</td>
+            </tr>
+            <tr>
+              <td><strong>Otot</strong></td>
+              <td>Menggerakkan tulang dengan cara berkontraksi (mengerut) dan berelaksasi.</td>
+              <td>Otot bisep yang menegang saat kamu mengangkat barang berat.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+    <section id="alur">
+      <h2>2. Analisis Alur Gerak</h2>
+      <p>Kita ambil contoh kejadian yang sering dialami: <strong>tidak sengaja menyentuh benda panas</strong> (gerak refleks) dan membandingkannya dengan gerak sadar.</p>
+
+      <h3>Gerak Refleks (Menyentuh Benda Panas)</h3>
+      <div class="kartu-grid">
+        <div class="kartu">
+          <h4>1. Rangsangan</h4>
+          <p>Panas dari benda yang disentuh (misalnya panci yang baru diangkat dari kompor).</p>
+        </div>
+        <div class="kartu">
+          <h4>2. Reseptor</h4>
+          <p>Termoreseptor di kulit ujung jari. Mereka langsung mendeteksi suhu tinggi.</p>
+        </div>
+        <div class="kartu">
+          <h4>3. Jalur Saraf</h4>
+          <p>Sinyal lewat saraf sensorik → masuk ke sumsum tulang belakang → langsung keluar lewat saraf motorik (tidak perlu ke otak dulu).</p>
+        </div>
+        <div class="kartu">
+          <h4>4. Jenis Gerak</h4>
+          <p><strong>Gerak refleks</strong> — otomatis, cepat, dan tanpa dipikir.</p>
+        </div>
+        <div class="kartu">
+          <h4>5. Respons</h4>
+          <p>Otot lengan berkontraksi → tangan langsung ditarik menjauh dari sumber panas.</p>
+        </div>
+      </div>
+
+      <h3>Alur Singkat Gerakan Refleks</h3>
+      <div class="alur">
+        <div class="langkah refleks">Rangsangan<br>(panas)</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Reseptor<br>(kulit)</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Sumsum<br>tulang belakang</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Otot<br>(tarik tangan)</div>
+      </div>
+
+      <h3>Perbandingan Gerak Refleks vs Gerak Sadar</h3>
+      <div class="tabel-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Aspek</th>
+              <th>Gerak Refleks</th>
+              <th>Gerak Sadar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Melalui otak?</strong></td>
+              <td>Tidak</td>
+              <td>Ya</td>
+            </tr>
+            <tr>
+              <td><strong>Pusat pengolah</strong></td>
+              <td>Sumsum tulang belakang</td>
+              <td>Otak</td>
+            </tr>
+            <tr>
+              <td><strong>Kecepatan</strong></td>
+              <td>Sangat cepat</td>
+              <td>Lebih lambat</td>
+            </tr>
+            <tr>
+              <td><strong>Bisa dikontrol?</strong></td>
+              <td>Tidak</td>
+              <td>Ya</td>
+            </tr>
+            <tr>
+              <td><strong>Contoh</strong></td>
+              <td>Menarik tangan dari api, refleks lutut</td>
+              <td>Mengambil buku, menulis, berjalan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+    <section id="ssp">
+      <h2>3. Sistem Saraf Pusat</h2>
+      <p>Sistem Saraf Pusat (SSP) adalah pusat kendali utama tubuh. Isinya hanya dua bagian: <strong>Otak</strong> dan <strong>Sumsum tulang belakang</strong>.</p>
+
+      <h3>Peran Sumsum Tulang Belakang</h3>
+      <div class="kartu-grid">
+        <div class="kartu">
+          <h4>Penghubung</h4>
+          <p>Menghubungkan otak dengan seluruh tubuh. Perintah dari otak turun lewat sini.</p>
+        </div>
+        <div class="kartu">
+          <h4>Pusat Refleks</h4>
+          <p>Mengolah gerakan otomatis tanpa perlu ke otak supaya lebih cepat.</p>
+        </div>
+        <div class="kartu">
+          <h4>Jalur Lalu Lintas</h4>
+          <p>Tempat saraf sensorik (masuk) dan saraf motorik (keluar) bertemu.</p>
+        </div>
+      </div>
+
+      <h3>Jalur Saraf di Sumsum Tulang Belakang</h3>
+      <div class="kartu-grid">
+        <div class="kartu">
+          <h4>Jalur Sensorik</h4>
+          <p>Membawa informasi dari tubuh ke pusat (otak/sumsum). Masuk lewat akar belakang.</p>
+        </div>
+        <div class="kartu">
+          <h4>Jalur Motorik</h4>
+          <p>Membawa perintah dari pusat ke otot. Keluar lewat akar depan.</p>
+        </div>
+      </div>
+
+      <h3>Busur Refleks (Jalur Terpendek)</h3>
+      <p>Ini jalur paling cepat yang terjadi hanya di sumsum tulang belakang:</p>
+      <div class="alur">
+        <div class="langkah refleks">Rangsangan</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Reseptor</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Saraf Sensorik</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Sumsum</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Saraf Motorik</div>
+        <div class="panah">→</div>
+        <div class="langkah refleks">Otot</div>
+      </div>
+    </section>
+
+    
+    <section id="kuis">
+      <h2>4. Kuis Interaktif</h2>
+      <p>Uji pemahamanmu yuk! Pilih jawaban yang paling tepat, lalu klik tombol di bawah untuk melihat skor.</p>
+
+      <div class="quiz-box" data-nomor="1">
+        <h4>1. Bagian tubuh manakah yang mengatur gerakan refleks supaya lebih cepat?</h4>
+        <label class="opsi" data-jawaban="a">A. Otak</label>
+        <label class="opsi" data-jawaban="b">B. Sumsum tulang belakang</label>
+        <label class="opsi" data-jawaban="c">C. Jantung</label>
+        <label class="opsi" data-jawaban="d">D. Paru-paru</label>
+      </div>
+
+      <div class="quiz-box" data-nomor="2">
+        <h4>2. Apa yang terjadi saat kamu tidak sengaja menyentuh benda panas?</h4>
+        <label class="opsi" data-jawaban="a">A. Otak memikirkan dulu baru tangan bergerak</label>
+        <label class="opsi" data-jawaban="b">B. Sinyal langsung diproses di sumsum tulang belakang dan tangan ditarik</label>
+        <label class="opsi" data-jawaban="c">C. Otot bergerak sendiri tanpa saraf</label>
+        <label class="opsi" data-jawaban="d">D. Tidak ada yang terjadi</label>
+      </div>
+
+      <div class="quiz-box" data-nomor="3">
+        <h4>3. Manakah yang termasuk gerak sadar?</h4>
+        <label class="opsi" data-jawaban="a">A. Menarik tangan dari api</label>
+        <label class="opsi" data-jawaban="b">B. Mengambil buku di meja</label>
+        <label class="opsi" data-jawaban="c">C. Refleks lutut</label>
+        <label class="opsi" data-jawaban="d">D. Berkedip saat debu masuk mata</label>
+      </div>
+
+      <div class="quiz-box" data-nomor="4">
+        <h4>4. Fungsi utama otot adalah...</h4>
+        <label class="opsi" data-jawaban="a">A. Menyimpan memori</label>
+        <label class="opsi" data-jawaban="b">B. Menggerakkan tulang dengan berkontraksi</label>
+        <label class="opsi" data-jawaban="c">C. Menghasilkan darah</label>
+        <label class="opsi" data-jawaban="d">D. Mengatur suhu tubuh saja</label>
+      </div>
+
+      <div class="quiz-box" data-nomor="5">
+        <h4>5. Mengapa gerak refleks lebih cepat daripada gerak sadar?</h4>
+        <label class="opsi" data-jawaban="a">A. Karena otot refleks lebih kuat</label>
+        <label class="opsi" data-jawaban="b">B. Karena jalur sarafnya lebih pendek (tidak melalui otak)</label>
+        <label class="opsi" data-jawaban="c">C. Karena otak bekerja lebih cepat saat bahaya</label>
+        <label class="opsi" data-jawaban="d">D. Karena saraf motorik lebih banyak</label>
+      </div>
+
+      <button class="btn" id="btn-skor">Lihat Skor Saya</button>
+      <div class="hasil" id="hasil"></div>
+    </section>
+
+   
+    <section id="refleksi">
+      <h2>5. Refleksi Individu</h2>
+
+      <div class="refleksi-item">
+        <strong>1. Apa yang paling kamu pahami setelah mengerjakan proyek ini?</strong><br>
+        Saya jadi lebih paham bahwa gerakan refleks tidak melalui otak, melainkan langsung diproses di sumsum tulang belakang supaya lebih cepat melindungi tubuh.
+      </div>
+
+      <div class="refleksi-item">
+        <strong>2. Bagaimana hubungan materi ini dengan kehidupan nyata?</strong><br>
+        Setiap hari kita melakukan gerak sadar (menulis, berjalan) dan gerak refleks (menarik tangan dari panas). Memahami ini membuat kita lebih menghargai bagaimana tubuh melindungi diri sendiri.
+      </div>
+
+      <div class="refleksi-item">
+        <strong>3. Skill PPLG apa yang kamu gunakan?</strong><br>
+        Membuat struktur HTML, mengatur tampilan dengan CSS (warna, layout responsif), dan menambahkan interaktivitas sederhana dengan JavaScript (kuis).
+      </div>
+
+      <div class="refleksi-item">
+        <strong>4. Kendala yang dihadapi & solusinya</strong><br>
+        Awalnya kesulitan menggambarkan alur saraf secara visual. Solusinya: membuat alur langkah demi langkah dengan kotak berwarna dan panah supaya lebih mudah dibaca.
+      </div>
+
+      <div class="refleksi-item">
+        <strong>5. Ide pengembangan fitur ke depan</strong><br>
+        Menambahkan animasi pergerakan otot, mode gelap, dan versi mobile app supaya bisa dipelajari sambil jalan.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      Digital Human Body Explorer • Dibuat untuk pembelajaran sistem saraf & sistem gerak<br>
+      Warna utama: Merah • Oranye • Biru • Putih • Kuning
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
